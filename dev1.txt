@@ -1,0 +1,9 @@
+{	"origin": ["#drive#\\\\#firstlevel#\\\\#filename#.#exetension#", "#drive#\\\\#firstlevel#\\\\#images#\\\\#filename#.#imgextention#"],
+	"drive": ["A:", "B:", "C:",”D:”,”E:”],
+	"firstlevel": ["Programs", "Users", "WINDOWS","games","joshfiles"],
+	"images": ["mygames", "fun", "images"],
+	"filename":  ["cat","wombatpoop","doom","jennifer"],
+	"exetension": ["exe", "bat", "com"],
+	"imgextention": ["svg", "gif", "bmp"],
+	"othersxtension": ["zip", "txt", "doc", "tmp", "ini","cfg","wad","sys"]
+}
