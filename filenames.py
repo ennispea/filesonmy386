@@ -2,8 +2,15 @@ import sys
 import json
 import os
 
-def main():
-    os.list
+IN_DIR = "corpus/in_all"
+
+def get_filenames():
+    res = []
+    filenames = os.listdir(IN_DIR)
+
+    for fn in filenames:
+        res = res + dofile(os.path.join(IN_DIR, fn))
+    return res
 
 def dofile(infile):
     lst = []
@@ -21,7 +28,13 @@ def dofile(infile):
                 except:
                     # print "Error:", word
                     pass
+    return lst
 
-    print json.dumps(lst)
+def main(in_dir=None):
+    n = get_filenames()
+    print(n)
+    print(len(n))
+
 if __name__=="__main__":
-    main(sys.argv[1])
+    #main(sys.argv[1])
+    main()
