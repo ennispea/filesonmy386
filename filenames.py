@@ -39,6 +39,13 @@ def dofile(infile):
                     word = word.replace('{','')
                     word = word.strip()
                     prefix, suffix = word.split('.')
+
+                    if '\\' in prefix:
+                        continue
+
+                    if len(prefix) > 8:
+                        continue
+
                     # print prefix, suffix
                     lst.append("%s.%s" % (prefix, suffix))
                     prefixes.add(prefix)
